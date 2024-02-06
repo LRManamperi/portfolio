@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* To evenly distribute items */
+    background-color: #ffffff; /* Set your desired background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul h1 {
+    font-size: 24px;
+    margin-right: 20px; /* Add spacing between the logo and menu items */
+  }
+  
+  li {
+    margin: 0 10px; /* Add spacing between menu items */
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Add hover effect if desired */
+  a:hover {
+    border-bottom: 2px solid blue;
+  }
+  
