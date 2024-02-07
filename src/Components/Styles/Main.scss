@@ -20,8 +20,10 @@
     }
 
     .image-container {
-        width: 40%; /* adjust as needed */
-        max-width: 400px; /* adjust as needed */
+        position: absolute; // Set position to absolute for precise positioning
+        top: 150px; // Adjust the distance from the top as needed
+        right: 150px; // Adjust the distance from the right as needed
+        z-index: 1; // Ensure the image is above other content
     }
 
     .anu2-pic {
@@ -30,6 +32,9 @@
         height: 300px; /* Set the desired height */
         object-fit: cover; /* Maintain aspect ratio while filling the space */
         animation: fadeIn 1s ease;
+        &:hover {
+            transform: scale(1.65);
+        }
     }
 
     /* Your existing styles */
@@ -40,10 +45,15 @@
 
     .text {
         animation: fadeInDown 1s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     .icons {
         animation: fadeInUp 1s ease;
+        transition: opacity 1s ease, transform 1s ease;
+        opacity: 1;
     }
 
     .buttons {
@@ -55,8 +65,41 @@
     }
     .about-me{
         animation: fadeIn 1s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
     }
 
+    .skills{
+        animation: fadeIn 1s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    .projects{
+        animation: fadeIn 1s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    .contact-me{
+        animation: fadeIn 1s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    .rasa {
+        height: 200px;
+        width: 1250px;
+        animation: fadeIn 1s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+    
     @keyframes fadeInDown {
         0% {
             opacity: 0;
